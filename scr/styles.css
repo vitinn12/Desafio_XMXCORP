@@ -1,0 +1,121 @@
+:root {
+    --fonte_header_01: 'Inter', sans-serif;
+    --fonte_header_02: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*------ CABEÇALHO ------*/
+header {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background: #0B0B0B;
+    background: linear-gradient(90deg, rgba(11, 11, 11, 1) 0%,
+            rgba(26, 13, 12, 1) 59%, rgba(170, 35, 21, 1) 100%);
+
+}
+
+.texto_cabecalho {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+
+    & a {
+        background: #FFFE4A;
+        background: linear-gradient(177deg, rgba(255, 254, 74, 1) 22%, rgba(255, 217, 1, 1) 78%);
+        text-decoration: none;
+        color: black;
+        width: 70%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        border-radius: 15px;
+        font-weight: bold;
+    }
+    & a img {
+        height: 24px;
+        width: 24px;
+    }
+
+    & .titulo {
+        font-size: 40px;
+    }
+    & .subtitulo_cabecalho {
+        font-size: 20px;
+    }
+}
+
+header .texto_cabecalho h1,
+header .texto_cabecalho .titulo,
+header .texto_cabecalho .oferta_cabecalho,
+header .texto_cabecalho .subtitulo_cabecalho,
+header .texto_cabecalho .beneficios_cabecalho {
+    color: white;
+    font-family: var(--fonte_header_01);
+}
+
+.texto_cabecalho h5 {
+    font-weight: 10;
+    display: flex;
+    align-items: center;
+}
+
+.texto_cabecalho h5 img {
+    height: 30px;
+    width: 17x;
+}
+
+.texto_cabecalho .titulo span {
+    background: linear-gradient(90deg, rgba(255, 71, 71, 1) 22%, rgba(246, 227, 35, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.texto_cabecalho .subtitulo_cabecalho span {
+    font-weight: 600;
+}
+
+.beneficios_cabecalho {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    & .texto_benecicios_cabecalho {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+.imagens_cabecalho{
+    background-color: ;
+    position: relative;
+
+    & .imagem_suplemento_cabecalho{
+        z-index: 2;
+    }
+    & .imagem_comprimido_cabecalho{
+        z-index: 1;
+        position: fixed;
+        left: 55%;
+    }
+}
+
+/*------ FIM DO CABEÇALHO ------*/
