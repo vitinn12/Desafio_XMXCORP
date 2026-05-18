@@ -48,6 +48,7 @@ header {
         border-radius: 15px;
         font-weight: bold;
     }
+
     & a img {
         height: 24px;
         width: 24px;
@@ -56,6 +57,7 @@ header {
     & .titulo {
         font-size: 40px;
     }
+
     & .subtitulo_cabecalho {
         font-size: 20px;
     }
@@ -104,18 +106,120 @@ header .texto_cabecalho .beneficios_cabecalho {
     }
 }
 
-.imagens_cabecalho{
-    background-color: ;
+.imagens_cabecalho {
     position: relative;
+    /*     width: clamp(240px, 40%, 700px); */
+    height: auto;
 
-    & .imagem_suplemento_cabecalho{
+    & .imagem_suplemento_cabecalho {
+        position: relative;
         z-index: 2;
+        width: 130%;
+        height: 130%;
     }
-    & .imagem_comprimido_cabecalho{
+
+    & .imagem_comprimido1_cabecalho {
+        position: absolute;
+        z-index: 3;
+        right: 68%;
+        top: 26%;
+    }
+
+    & .imagem_folha1_cabecalho {
+        position: absolute;
+        z-index: 3;
+        right: 58%;
+        top: 60%;
+        width: 160px;
+        height: 160px;
+    }
+
+    & .imagem_comprimido2_cabecalho {
+        position: absolute;
         z-index: 1;
-        position: fixed;
-        left: 55%;
+        right: 18%;
+        top: 60%;
+        width: 90px;
+        height: 90px;
+    }
+
+    & .imagem_folha2_cabecalho {
+        position: absolute;
+        z-index: 3;
+        right: 16%;
+        top: 29%;
+        width: 100px;
+        height: 100px;
     }
 }
 
 /*------ FIM DO CABEÇALHO ------*/
+
+/*------ NAVBAR ------*/
+
+.navbar {
+    background-color: #F7C417;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    padding: 2%;
+
+    & .navbar_texto4,
+    .navbar_texto3,
+    .navbar_texto2,
+    .navbar_texto1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+    }
+
+    & .navbar_texto3 {
+        width: 10%;
+    }
+
+    & .navbar_texto1 {
+        width: 12%;
+    }
+
+    & .icone_navbar {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+/*------ FIM DO NAVBAR ------*/
+
+/*------ OFERTAS KITS 01 ------*/
+
+.ofertas_kits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+
+    & .texto_oferta_kit h1 {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    & .texto_oferta_kit h1 span {
+        background: linear-gradient(94deg, rgba(255, 71, 71, 1) 0%, rgba(207, 192, 27, 1) 97%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.sessao_kits {
+    & .kit1,
+    .kit2 {
+
+    }
+}
+
+/*------ FIM DA OFERTAS KITS 01 ------*/
