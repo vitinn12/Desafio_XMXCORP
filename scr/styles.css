@@ -55,6 +55,7 @@ header {
         height: 24px;
         width: 24px;
     }
+
     & a:hover {
         transition: 0.5s;
         transform: scale(1.05);
@@ -238,7 +239,9 @@ header .texto_cabecalho .beneficios_cabecalho {
         transition: 0.5s;
         border: 1px solid gray;
     }
-    & .kit:hover, .kit_meio:hover {
+
+    & .kit:hover,
+    .kit_meio:hover {
         transition: 0.5s;
         transform: scale(1.05);
     }
@@ -334,6 +337,7 @@ header .texto_cabecalho .beneficios_cabecalho {
         width: 70%;
         height: 80%;
     }
+
     & .kit .imagem_kit1 {
         width: 55%;
 
@@ -381,6 +385,7 @@ header .texto_cabecalho .beneficios_cabecalho {
         width: 24px;
     }
 }
+
 .texto_info_suplemento {
     display: flex;
     flex-direction: column;
@@ -397,8 +402,9 @@ header .texto_cabecalho .beneficios_cabecalho {
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        
+
     }
+
     & a {
         background: #FFFE4A;
         background: linear-gradient(177deg, rgba(255, 254, 74, 1) 22%, rgba(255, 217, 1, 1) 78%);
@@ -414,24 +420,362 @@ header .texto_cabecalho .beneficios_cabecalho {
         font-weight: bold;
         transition: 0.5s;
     }
+
     & a:hover {
         transition: 0.5s;
         transform: scale(1.05);
     }
 }
+
 /*------ FIM DA SESSAO INFORMAÇOES SUPLEMENTOS ------*/
 
 /*------ Inicio DA SESSAO BENEFICIOS SUPLEMENTOS ------*/
 
-.sessao_beneficios_suplemento{
+.sessao_beneficios_suplemento {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     gap: 20px;
     padding: 3%;
     background-color: #f1f1f1;
 
+    & .texto_beneficios_suplemento {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    & .titulo_beneficios_suplemento span {
+        background: linear-gradient(90deg, rgba(255, 71, 71, 1) 22%, rgb(223, 207, 33) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    & .subtitulo_beneficios_suplemento {
+        width: 60%;
+        text-align: center;
+    }
+
+    & a {
+        background: #FFFE4A;
+        background: linear-gradient(177deg, rgba(255, 254, 74, 1) 22%, rgba(255, 217, 1, 1) 78%);
+        text-decoration: none;
+        color: black;
+        width: 20%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        border-radius: 15px;
+        font-weight: bold;
+        transition: 0.5s;
+    }
+
+    & a:hover {
+        transition: 0.5s;
+        transform: scale(1.05);
+    }
+
+    & a img {
+        height: 24px;
+        width: 24px;
+    }
 
 }
 
+.componentes_beneficios_suplemento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+
+    & .comp_beneficios_suplemento {
+        padding: 2%;
+        background-color: black;
+        width: 23%;
+        height: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 10px;
+    }
+
+    & .texto_comp_beneficios_suplemento {
+        color: white;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    & .texto_comp_beneficios_suplemento span {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    & .imagem_comp_beneficios_suplemento {
+        width: 150px;
+        height: 150px;
+        padding-bottom: 10%;
+    }
+}
+
 /*------ FIM DA SESSAO BENEFICIOS SUPLEMENTOS ------*/
+
+/*------ INICIO DA SEGUNDA SESSAO DE INFORMACOES DE SUPLEMENTOS ------*/
+
+.sessao_informacoes_suplemento_segundo {
+    background-color: #000000;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imagens/sessao_informacoes_suplemento_dois/00b38a8e64fe4fb969000e1a3fddbd815c30ae05.png);
+    background-size: 40% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: 35%;
+
+    & .img_principal_info_suplemento_segundo {
+        width: 48%;
+    }
+
+}
+
+.texto_info_suplemento_segundo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 35%;
+
+    & .cabecalho_oferta_suplemento_segundo {
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+
+    & .cabecalho_oferta_suplemento_segundo img {
+        height: 30px;
+        width: 30px;
+    }
+
+    & .titulo_info_suplemento_segundo {
+        color: white;
+    }
+
+    & .titulo_info_suplemento_segundo span {
+        background: linear-gradient(90deg, rgba(255, 71, 71, 1) 22%, rgba(246, 227, 35, 1) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    & .descricao_info_suplemento_segundo {
+        color: white;
+        text-align: center;
+    }
+
+    & a {
+        background: #FFFE4A;
+        background: linear-gradient(177deg, rgba(255, 254, 74, 1) 22%, rgba(255, 217, 1, 1) 78%);
+        text-decoration: none;
+        color: black;
+        width: 50%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        border-radius: 15px;
+        font-weight: bold;
+        transition: 0.5s;
+    }
+
+    & a:hover {
+        transition: 0.5s;
+        transform: scale(1.05);
+    }
+
+    & a img {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+.lista_info_suplemento_segundo {
+    & .texto_lista_info_suplemento_segundo {
+        display: flex;
+        color: white;
+        gap: 7px;
+        align-items: center;
+    }
+}
+
+/*------ FIM DA SEGUNDA SESSAO DE INFORMACOES DE SUPLEMENTOS ------*/
+
+/*------ INICIO DA SESSAO DE AVALIACAO DE PESSOAS ------*/
+
+.sessao_avaliacao_pessoas {
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 7%;
+
+    & .texto_cabecalho_avaliacao_pessoas {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    & .texto_cabecalho_avaliacao_pessoas span {
+        background: linear-gradient(90deg, rgba(255, 71, 71, 1) 22%, rgba(246, 227, 35, 1) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    & .subtitulo_avaliacao_pessoas {
+        width: 60%;
+        text-align: center;
+    }
+
+    & a {
+        background: #FFFE4A;
+        background: linear-gradient(177deg, rgba(255, 254, 74, 1) 22%, rgba(255, 217, 1, 1) 78%);
+        text-decoration: none;
+        color: black;
+        width: 20%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        border-radius: 15px;
+        font-weight: bold;
+        transition: 0.5s;
+    }
+
+    & a:hover {
+        transition: 0.5s;
+        transform: scale(1.05);
+    }
+
+    & a img {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+.componentes_avaliacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    & .comp_avaliacao {
+        background-color: #FFF;
+        width: 23%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+        border-radius: 10px;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.comp_avaliacao {
+    & .linha-divisoria {
+        width: 80%;
+        height: 1px;
+        background-color: #ccc;
+        margin: 10px 0;
+    }
+
+    & img {
+        width: 100%;
+        padding-bottom: 10%;
+        border-radius: 10px;
+    }
+    & .comentario_avalidor {
+        text-align: center;
+        font-style: italic;
+        color: #333;
+        padding: 1%;
+    }
+    & .nome_idade_avaliador {
+        font-weight: bold;
+        color: #333;
+        padding: 3%;
+    }
+}
+
+/*------ FIM DA SESSAO DE AVALIACAO DE PESSOAS ------*/
+
+/*------ INICIO DA SESSAO FRETE GRATIS ------*/
+
+.sessao_frete_gratis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    background-color: #F7C417;
+    gap: 10px;
+}
+.textos_frete_gratis {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & .titulo_frete_gratis {
+        font-weight: bold;
+        font-size: 40px;
+    }
+    & .titulo_frete_gratis span {
+        color: #606060;
+    }
+    & .subtitulo_frete_gratis {
+        font-size: 20px;
+    }
+    
+}
+
+/*------ FIM DA SESSAO FRETE GRATIS ------*/
+
+/*------ Inicio DA SESSAO ESTOQUE LIMITADO ------*/
+
+.sessao_estoque_limitado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    background-color: #000000;
+    gap: 10px;
+    color: white;
+
+    & .texto_estoque_limitado {
+        font-weight: bold;
+        font-size: 30px;
+        width: 60%;
+        text-align: center;
+    }
+    & .texto_estoque_limitado span {
+        color: #F7C417;
+    }
+}
+
+/*------ FIM DA SESSAO ESTOQUE LIMITADO ------*/
