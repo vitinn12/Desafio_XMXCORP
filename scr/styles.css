@@ -639,6 +639,7 @@ header .texto_cabecalho .beneficios_cabecalho {
         font-size: 30px;
         font-weight: bold;
     }
+
     & .texto_cabecalho_avaliacao_pessoas span {
         background: linear-gradient(90deg, rgba(255, 71, 71, 1) 22%, rgba(246, 227, 35, 1) 100%);
         -webkit-background-clip: text;
@@ -711,12 +712,14 @@ header .texto_cabecalho .beneficios_cabecalho {
         padding-bottom: 10%;
         border-radius: 10px;
     }
+
     & .comentario_avalidor {
         text-align: center;
         font-style: italic;
         color: #333;
         padding: 1%;
     }
+
     & .nome_idade_avaliador {
         font-weight: bold;
         color: #333;
@@ -736,6 +739,7 @@ header .texto_cabecalho .beneficios_cabecalho {
     background-color: #F7C417;
     gap: 10px;
 }
+
 .textos_frete_gratis {
     display: flex;
     flex-direction: column;
@@ -745,13 +749,15 @@ header .texto_cabecalho .beneficios_cabecalho {
         font-weight: bold;
         font-size: 40px;
     }
+
     & .titulo_frete_gratis span {
         color: #606060;
     }
+
     & .subtitulo_frete_gratis {
         font-size: 20px;
     }
-    
+
 }
 
 /*------ FIM DA SESSAO FRETE GRATIS ------*/
@@ -773,9 +779,248 @@ header .texto_cabecalho .beneficios_cabecalho {
         width: 60%;
         text-align: center;
     }
+
     & .texto_estoque_limitado span {
         color: #F7C417;
     }
 }
 
 /*------ FIM DA SESSAO ESTOQUE LIMITADO ------*/
+
+/*------ INICIO DA SEGUNDA AREA DE KITS ------*/
+/*fiz uma copia dos componentes da primeira area
+de kits e coloquei na segunda area de kits
+para economizar tempo, o mesmo foi feito na segunda sessao de beneficios*/
+.segunda_area_kits {
+    padding: 4%;
+}
+
+#beneficios_segundo {
+    background-color: white;
+}
+
+/*------ FIM DA SEGUNDA AREA DE KITS ------*/
+
+/*------ INICIO DA SESSAO DE CLASSIFICACAO ------*/
+
+.sessao_classificacao {
+    padding: 2%;
+}
+
+.sessao_classificacao,
+.avaliacao_classificacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & .estrela_texto_sessao_classificacao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*------ FIM DA SESSAO DE CLASSIFICACAO ------*/
+
+/*------ Inicio DA SESSAO GARANTIA DE CARTAO ------*/
+
+.sessao_garantia_cartao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+
+    & .card_sessao_garantia_cartao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3%;
+        background: #0B0B0B;
+        background: linear-gradient(90deg, rgba(11, 11, 11, 1) 0%, rgba(26, 13, 12, 1) 51%, rgba(170, 35, 21, 1) 100%);
+        border-radius: 10px;
+        width: 70%;
+        gap: 30px;
+    }
+
+    & .texto_garantia_cartao {
+        color: white;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    & .titulo_garantia_cartao {
+        font-size: 40px;
+    }
+
+    & .titulo_garantia_cartao span {
+        background: linear-gradient(90deg, rgba(255, 71, 71, 1) 22%, rgba(246, 227, 35, 1) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    & .subtitulo_garantia_cartao {
+        font-size: 17px;
+    }
+
+    & a {
+        background: #FFFE4A;
+        background: linear-gradient(177deg, rgba(255, 254, 74, 1) 22%, rgba(255, 217, 1, 1) 78%);
+        text-decoration: none;
+        color: black;
+        width: 50%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        border-radius: 15px;
+        font-weight: bold;
+        transition: 0.5s;
+    }
+
+    & a:hover {
+        transition: 0.5s;
+        transform: scale(1.05);
+    }
+
+    & a img {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+/*------ fim DA SESSAO GARANTIA DE CARTAO ------*/
+
+/*------ INICIO DA SESSAO DE PERGUNTAS FREQUENTES ------*/
+
+.sessao_perguntas_frequentes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+    background-color: #1A1A1A;
+    color: white;
+    gap: 25px;
+
+    & .titulo {
+        font-size: 24px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    & .titulo span {
+        font-weight: normal;
+        font-size: 19px;
+        color: #F7C417;
+    }
+
+    & a {
+        background: #FFFE4A;
+        background: linear-gradient(177deg, rgba(255, 254, 74, 1) 22%, rgba(255, 217, 1, 1) 78%);
+        text-decoration: none;
+        color: black;
+        width: 20%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        border-radius: 15px;
+        font-weight: bold;
+        transition: 0.5s;
+    }
+
+    & a:hover {
+        transition: 0.5s;
+        transform: scale(1.05);
+    }
+
+    & a img {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+.lista_perguntas {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+    & details {
+        background-color: white;
+        border-radius: 5px;
+        padding: 2%;
+        width: 90%;
+        color: black;
+    }
+
+    & details p {
+        padding: 1%;
+    }
+}
+
+.lista_perguntas summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/*------ FIM DA SESSAO DE PERGUNTAS FREQUENTES ------*/
+
+/*------ INICIO DO RODAPE ------*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    & .rodape_termos {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #F7C417;
+        width: 100%;
+        padding: 1%;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 15px;
+    }
+    & .rodape_informacoes_produto {
+        background-color: black;
+        color: white;
+        padding: 1%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    & .rodape_informacoes_produto p {
+        width: 50%;
+        font-size: 15px;
+        text-align: center;
+    }
+    & .rodape_direitos_autorais {
+        padding: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 4px;
+        font-size: 13px;
+    }
+        
+
+    
+}
+
+/*------ FIM DO RODAPE ------*/
