@@ -120,8 +120,8 @@ header .texto_cabecalho .beneficios_cabecalho {
     & .imagem_suplemento_cabecalho {
         position: relative;
         z-index: 2;
-        width: 130%;
-        height: 130%;
+        width: 100%;
+        height: 100%;
     }
 
     & .imagem_comprimido1_cabecalho {
@@ -221,6 +221,7 @@ header .texto_cabecalho .beneficios_cabecalho {
 .sessao_kits {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 2%;
@@ -365,6 +366,7 @@ header .texto_cabecalho .beneficios_cabecalho {
     display: flex;
     align-items: center;
     justify-content: center;
+
 
     & img {
         width: 50%;
@@ -945,6 +947,10 @@ para economizar tempo, o mesmo foi feito na segunda sessao de beneficios*/
         height: 24px;
         width: 24px;
     }
+
+    & .logo_garaherb {
+        width: 55%;
+    }
 }
 
 .lista_perguntas {
@@ -978,7 +984,7 @@ para economizar tempo, o mesmo foi feito na segunda sessao de beneficios*/
 
 /*------ INICIO DO RODAPE ------*/
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -995,6 +1001,7 @@ footer{
         gap: 20px;
         font-size: 15px;
     }
+
     & .rodape_informacoes_produto {
         background-color: black;
         color: white;
@@ -1004,11 +1011,13 @@ footer{
         justify-content: center;
 
     }
+
     & .rodape_informacoes_produto p {
         width: 50%;
         font-size: 15px;
         text-align: center;
     }
+
     & .rodape_direitos_autorais {
         padding: 1%;
         display: flex;
@@ -1018,9 +1027,88 @@ footer{
         gap: 4px;
         font-size: 13px;
     }
-        
 
-    
+
+
 }
 
 /*------ FIM DO RODAPE ------*/
+
+/*------ Responsividade da pag ------*/
+
+@media (max-width: 800px) {
+    header {
+        flex-wrap: wrap-reverse;
+    }
+
+    .texto_cabecalho {
+        width: 60%;
+        padding: 3%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .texto_cabecalho h1,
+    header .texto_cabecalho .titulo_cabecalho,
+    header .texto_cabecalho .oferta_cabecalho,
+    header .texto_cabecalho .subtitulo_cabecalho,
+    header .texto_cabecalho .beneficios_cabecalho {
+        text-align: center;
+    }
+
+    .sessao_informacoes_suplemento {
+        padding: 2%;
+    }
+
+    .texto_info_suplemento {
+        width: 50%;
+    }
+
+    .texto_info_suplemento_segundo {
+        width: 50%;
+    }
+
+    .sessao_informacoes_suplemento_segundo {
+        background-position: 20%;
+    }
+
+    .card_sessao_garantia_cartao img {
+        width: 50%;
+
+    }
+}
+
+@media (max-width: 600px) {
+    .sessao_kits {
+        gap: 20px;
+
+       & .kit,
+        .kit_meio {
+            width: 80%;
+        }
+
+      & .topo_kit,
+        .topo_kit_meio {
+            width: 90%;
+        }
+    }
+    .sessao_beneficios_suplemento{
+        & a {
+            width: 50%;
+        }
+        & .titulo_beneficios_suplemento{
+            text-align: center;
+        }
+    }
+    .componentes_beneficios_suplemento{
+
+        & .comp_beneficios_suplemento {
+            width: 40%;
+            gap: 5px;
+            height: 320px;
+        }
+    }
+}
+@media (max-width: 500px){
+    
+}
