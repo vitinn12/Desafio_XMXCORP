@@ -48,14 +48,19 @@ header {
         gap: 7px;
         border-radius: 15px;
         font-weight: bold;
+        transition: 0.5s;
     }
 
     & a img {
         height: 24px;
         width: 24px;
     }
+    & a:hover {
+        transition: 0.5s;
+        transform: scale(1.05);
+    }
 
-    & .titulo {
+    & .titulo_cabecalho {
         font-size: 40px;
     }
 
@@ -65,7 +70,7 @@ header {
 }
 
 header .texto_cabecalho h1,
-header .texto_cabecalho .titulo,
+header .texto_cabecalho .titulo_cabecalho,
 header .texto_cabecalho .oferta_cabecalho,
 header .texto_cabecalho .subtitulo_cabecalho,
 header .texto_cabecalho .beneficios_cabecalho {
@@ -84,7 +89,7 @@ header .texto_cabecalho .beneficios_cabecalho {
     width: 17x;
 }
 
-.texto_cabecalho .titulo span {
+.texto_cabecalho .titulo_cabecalho span {
     background: linear-gradient(90deg, rgba(255, 71, 71, 1) 22%, rgba(246, 227, 35, 1) 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -230,6 +235,12 @@ header .texto_cabecalho .beneficios_cabecalho {
         align-items: center;
         justify-content: center;
         border-radius: 20px;
+        transition: 0.5s;
+        border: 1px solid gray;
+    }
+    & .kit:hover, .kit_meio:hover {
+        transition: 0.5s;
+        transform: scale(1.05);
     }
 
     & .topo_kit,
@@ -323,6 +334,10 @@ header .texto_cabecalho .beneficios_cabecalho {
         width: 70%;
         height: 80%;
     }
+    & .kit .imagem_kit1 {
+        width: 55%;
+
+    }
 
     & .preco_final_kit {
         font-weight: bold;
@@ -345,7 +360,7 @@ header .texto_cabecalho .beneficios_cabecalho {
     background: linear-gradient(142deg, rgba(0, 0, 0, 1) 74%, rgba(170, 35, 21, 1) 100%);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 
     & img {
         width: 50%;
@@ -360,7 +375,63 @@ header .texto_cabecalho .beneficios_cabecalho {
         height: 30px;
         width: 30px;
     }
+
+    & a img {
+        height: 24px;
+        width: 24px;
+    }
+}
+.texto_info_suplemento {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 10px;
+
+    & .descricao_info_suplemento,
+    .titulo_info_suplemento {
+        color: white;
+    }
+
+    & .titulo_info_suplemento span {
+        background: linear-gradient(90deg, rgba(255, 71, 71, 1) 22%, rgba(246, 227, 35, 1) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+    }
+    & a {
+        background: #FFFE4A;
+        background: linear-gradient(177deg, rgba(255, 254, 74, 1) 22%, rgba(255, 217, 1, 1) 78%);
+        text-decoration: none;
+        color: black;
+        width: 50%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        border-radius: 15px;
+        font-weight: bold;
+        transition: 0.5s;
+    }
+    & a:hover {
+        transition: 0.5s;
+        transform: scale(1.05);
+    }
+}
+/*------ FIM DA SESSAO INFORMAÇOES SUPLEMENTOS ------*/
+
+/*------ Inicio DA SESSAO BENEFICIOS SUPLEMENTOS ------*/
+
+.sessao_beneficios_suplemento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 3%;
+    background-color: #f1f1f1;
+
+
 }
 
-
-/*------ FIM DA SESSAO INFORMAÇOES SUPLEMENTOS ------*/
+/*------ FIM DA SESSAO BENEFICIOS SUPLEMENTOS ------*/
