@@ -22,10 +22,8 @@ header {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    background: #0B0B0B;
     background: linear-gradient(90deg, rgba(11, 11, 11, 1) 0%,
-            rgba(26, 13, 12, 1) 59%, rgba(170, 35, 21, 1) 100%);
-
+            rgba(26, 13, 12, 1) 59%, rgba(170, 35, 21, 1) 100%)
 }
 
 .texto_cabecalho {
@@ -180,7 +178,7 @@ header .texto_cabecalho .beneficios_cabecalho {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 7px;
+        gap: 4px;
     }
 
 
@@ -366,7 +364,7 @@ header .texto_cabecalho .beneficios_cabecalho {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding: 2%;
 
     & img {
         width: 50%;
@@ -391,7 +389,7 @@ header .texto_cabecalho .beneficios_cabecalho {
 .texto_info_suplemento {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 40%;
     gap: 10px;
 
     & .descricao_info_suplemento,
@@ -412,7 +410,7 @@ header .texto_cabecalho .beneficios_cabecalho {
         background: linear-gradient(177deg, rgba(255, 254, 74, 1) 22%, rgba(255, 217, 1, 1) 78%);
         text-decoration: none;
         color: black;
-        width: 50%;
+        width: 70%;
         height: 50px;
         display: flex;
         align-items: center;
@@ -502,7 +500,7 @@ header .texto_cabecalho .beneficios_cabecalho {
         padding: 2%;
         background-color: black;
         width: 23%;
-        height: 280px;
+        height: 320px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -557,7 +555,7 @@ header .texto_cabecalho .beneficios_cabecalho {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 35%;
+    width: 40%;
 
     & .cabecalho_oferta_suplemento_segundo {
         color: white;
@@ -1013,7 +1011,7 @@ footer {
     }
 
     & .rodape_informacoes_produto p {
-        width: 50%;
+        width: 80%;
         font-size: 15px;
         text-align: center;
     }
@@ -1082,25 +1080,28 @@ footer {
     .sessao_kits {
         gap: 20px;
 
-       & .kit,
+        & .kit,
         .kit_meio {
             width: 80%;
         }
 
-      & .topo_kit,
+        & .topo_kit,
         .topo_kit_meio {
             width: 90%;
         }
     }
-    .sessao_beneficios_suplemento{
+
+    .sessao_beneficios_suplemento {
         & a {
             width: 50%;
         }
-        & .titulo_beneficios_suplemento{
+
+        & .titulo_beneficios_suplemento {
             text-align: center;
         }
     }
-    .componentes_beneficios_suplemento{
+
+    .componentes_beneficios_suplemento {
 
         & .comp_beneficios_suplemento {
             width: 40%;
@@ -1109,6 +1110,179 @@ footer {
         }
     }
 }
-@media (max-width: 500px){
-    
+
+@media (max-width: 500px) {
+    header {
+        width: 98%;
+        padding-bottom: 10%;
+
+        & .beneficios_cabecalho {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .texto_cabecalho {
+        width: 97%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sessao_informacoes_suplemento {
+        flex-direction: column;
+
+        & img {
+            width: 100%;
+        }
+
+        & .texto_info_suplemento {
+            padding: 5%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 15px;
+        }
+    }
+
+    .componentes_beneficios_suplemento {
+        & .comp_beneficios_suplemento {
+            width: 40%;
+            height: 260px;
+
+            & img {
+                width: 60%;
+                object-fit: contain;
+                padding-bottom: 0;
+            }
+        }
+
+        & .texto_comp_beneficios_suplemento span {
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+
+    .sessao_informacoes_suplemento_segundo {
+        flex-direction: column;
+        background-image: none;
+        gap: 50px;
+
+        & .img_principal_info_suplemento_segundo {
+            width: 80%;
+            padding-top: 5%;
+        }
+    }
+
+    .texto_info_suplemento_segundo {
+        width: 95%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sessao_avaliacao_pessoas {
+
+        & .texto_cabecalho_avaliacao_pessoas {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        & a {
+            width: 50%;
+        }
+    }
+
+    .componentes_avaliacao {
+        & .comp_avaliacao {
+            width: 45%;
+        }
+
+        & .comp_avaliacao {
+            & .nome_idade_avaliador {
+                text-align: center;
+                padding: 3%;
+            }
+        }
+    }
+
+    .sessao_frete_gratis {
+        & img {
+            width: 20%;
+        }
+    }
+
+    .textos_frete_gratis {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        & .titulo_frete_gratis {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        & .subtitulo_frete_gratis {
+            font-size: 13px;
+        }
+    }
+
+    .sessao_estoque_limitado {
+
+        & .texto_estoque_limitado {
+            font-weight: bold;
+            font-size: 15px;
+            width: 60%;
+            text-align: center;
+        }
+    }
+
+    .sessao_classificacao {
+        font-size: 12px;
+    }
+
+    .sessao_garantia_cartao {
+
+        & .card_sessao_garantia_cartao {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        & .titulo_garantia_cartao {
+            font-size: 30px;
+        }
+
+        & .texto_garantia_cartao {
+            width: 90%;
+            text-align: center;
+            align-items: center;
+        }
+
+        & a {
+            width: 70%;
+        }
+    }
+
+    .sessao_perguntas_frequentes {
+        & .logo_garaherb {
+            width: 100%;
+        }
+
+        & a {
+            width: 60%;
+        }
+    }
+    footer {
+
+    & .rodape_termos {
+      gap: 10px;
+    }
+        & .rodape_informacoes_produto p {
+        width: 80%;
+    }
+    }
+
 }
+
+/*------ final Responsividade da pag ------*/
